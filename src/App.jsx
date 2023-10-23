@@ -1,10 +1,11 @@
 import "./app.scss";
+import Navbar from "./componenets/navbar/Navbar";
 
 function App() {
   return (
     <div>
       <section>
-        <a href="">Hero</a>
+        <Navbar />
       </section>
       <section>Paralax</section>
       <section>Services</section>
