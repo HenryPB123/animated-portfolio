@@ -10,7 +10,6 @@
     margin: auto;
 
     .textContainer {
-      background-color: aqua;
       width: 80%;
       height: 100%;
       display: flex;
@@ -62,5 +61,7 @@
     bottom: -100px;
     white-space: nowrap;
     color: #ffffff09;
+    width: 50%;
+    font-weight: bolder;
   }
 }
