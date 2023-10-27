@@ -24,22 +24,20 @@
       }
 
       h1 {
-        font-size: 100px;
-        font-weight: bolder;
+        font-size: 80px;
       }
 
       .buttons {
         display: flex;
         gap: 50px;
-
+        z-index: 3;
         button {
-          cursor: pointer;
           padding: 20px;
           border: 1px solid whitesmoke;
           border-radius: 10px;
           background-color: transparent;
           color: whitesmoke;
-          font-weight: 500;
+          cursor: pointer;
         }
       }
 
@@ -50,6 +48,8 @@
   }
 
   .imageContainer {
+    z-index: 2;
+
     height: 100%;
     position: absolute;
     top: 0;
@@ -57,6 +57,8 @@
   }
 
   .slidingTextContainer {
+    z-index: 1;
+
     position: absolute;
     font-size: 50vh;
     bottom: -100px;
