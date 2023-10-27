@@ -5,6 +5,7 @@ import Hero from "./componenets/hero/Hero";
 import Paralax from "./componenets/parallax/Paralax";
 import Services from "./componenets/servicess/Services";
 import Porfolio from "./componenets/portfolio/Porfolio";
+import Contact from "./componenets/contact/Contact";
 
 function App() {
   return (
@@ -22,11 +23,13 @@ function App() {
       <section id="Portfolio">
         <Paralax type="portfolio" />
       </section>
-      <Porfolio />
+      <Porfolio />{" "}
+      <section id="Contact">
+        <Contact />
+      </section>
       <section id="About">About</section>
       <section id="Curriculum">Curriculum</section>
       <section id="Skills">Skills</section>
-      <section id="Contact">Contact</section>
     </div>
   );
 }
