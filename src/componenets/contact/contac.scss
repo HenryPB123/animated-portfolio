@@ -30,6 +30,15 @@
     .phoneSvg {
       position: absolute;
       margin: auto;
+      z-index: -1;
+      svg {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        fill: none;
+        stroke: orange;
+        stroke-width: 0.5%;
+      }
     }
 
     form {
@@ -55,6 +64,12 @@
         cursor: pointer;
         font-weight: 900;
         font-size: larger;
+      }
+      p {
+        color: whitesmoke;
+        align-self: center;
+        font-size: larger;
+        font-weight: 600;
       }
     }
   }
