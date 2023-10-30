@@ -24,24 +24,26 @@ const Services = () => {
 
   const inView = useInView(ref, { margin: "-100px" });
 
+  let width = window.screen.width;
+
   return (
     <motion.div
       className="services"
-      variants={variants}
+      variants={width > 738 && variants}
       initial="initial"
       ref={ref}
       // whileInView="animate"
       // animate="animate"
       animate={inView && "animate"}
     >
-      <motion.div className="textContainer" variants={variants}>
+      <motion.div className="textContainer" variants={width > 738 && variants}>
         <p>
           I focus on help your brand grow
           <br /> and move forward
         </p>
         <hr />
       </motion.div>
-      <motion.div className="titleContainer" variants={variants}>
+      <motion.div className="titleContainer" variants={width > 738 && variants}>
         <div className="title">
           <img src="/people.webp" alt="img" />
           <h1>
@@ -56,7 +58,7 @@ const Services = () => {
           <button>WHAT I DO?</button>
         </div>
       </motion.div>
-      <motion.div className="listContainer" variants={variants}>
+      <motion.div className="listContainer" variants={width > 738 && variants}>
         <motion.div
           className="box"
           whileHover={{ backgroundColor: "lightgray", color: "black" }}

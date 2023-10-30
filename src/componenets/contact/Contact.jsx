@@ -41,6 +41,7 @@ const Contact = () => {
         formRef.current[0].value = "";
         formRef.current[1].value = "";
         formRef.current[2].value = "";
+        setTimeout(() => setSuccess(false), 2000);
       },
       (error) => {
         setError(true);

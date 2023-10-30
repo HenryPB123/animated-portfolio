@@ -6,10 +6,12 @@ import Paralax from "./componenets/parallax/Paralax";
 import Services from "./componenets/servicess/Services";
 import Porfolio from "./componenets/portfolio/Porfolio";
 import Contact from "./componenets/contact/Contact";
+import Cursor from "./componenets/cursor/Cursor";
 
 function App() {
   return (
     <div>
+      <Cursor />
       <section id="Homepage">
         <Navbar />
         <Hero />
@@ -27,9 +29,9 @@ function App() {
       <section id="Contact">
         <Contact />
       </section>
-      <section id="About">About</section>
+      {/* <section id="About">About</section>
       <section id="Curriculum">Curriculum</section>
-      <section id="Skills">Skills</section>
+      <section id="Skills">Skills</section> */}
     </div>
   );
 }
